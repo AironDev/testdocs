@@ -1,0 +1,557 @@
+_type: export
+__export_format: 4
+__export_date: 2021-09-16T07:42:47.672Z
+__export_source: insomnia.desktop.app:v2021.5.3
+resources:
+  - _id: req_39741361358c49d2b073c4621b13f24b
+    parentId: fld_5684751e98e344efa4867f19687fd4fa
+    modified: 1631736833860
+    created: 1631456570736
+    url: "{{api_base}}/api/v1/expenses"
+    name: Expenses | Index
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"room_id": "6133c5a68006324323416896",
+        	"plugin_id": "613ba9de41f5856617552f51",
+        	"organization_id": "6133c5a68006324323416896"
+         }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ba67cd6043b54165806ee90961d92bfa
+    authentication: {}
+    metaSortKey: -1628789542245.5312
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_5684751e98e344efa4867f19687fd4fa
+    parentId: fld_31a61285246e4765889050c3f4f3432a
+    modified: 1631736974508
+    created: 1631736781649
+    name: Expenses
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1629322948013.625
+    _type: request_group
+  - _id: fld_31a61285246e4765889050c3f4f3432a
+    parentId: wrk_87afa490db7542d193a83b2e8c31769b
+    modified: 1631456524389
+    created: 1631456524389
+    name: Expense_Plugin
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1631456524389
+    _type: request_group
+  - _id: wrk_87afa490db7542d193a83b2e8c31769b
+    parentId: null
+    modified: 1631456483583
+    created: 1631456483584
+    name: Zuri Chat
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_476ee141f0ac4529a564bec281a20dc6
+    parentId: fld_5684751e98e344efa4867f19687fd4fa
+    modified: 1631737547235
+    created: 1631552152097
+    url: "{{api_base}}/api/v1/expenses/614256519fd1f4f655d44625"
+    name: Expenses | single
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"room_id": "6133c5a68006324323416896",
+        	"plugin_id": "613ba9de41f5856617552f51",
+        	"organization_id": "6133c5a68006324323416896",
+        	"object_id": "614255a89fd1f4f655d4461e"
+         }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_346e2783e4f4495b81cf253be71799b5
+    authentication: {}
+    metaSortKey: -1628789542195.5312
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c876c67b2d62496297a4465b7d5e249b
+    parentId: fld_5684751e98e344efa4867f19687fd4fa
+    modified: 1631737246674
+    created: 1631474454106
+    url: "{{api_base}}/api/v1/expenses"
+    name: Expenses | store
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"author_id": "613d3e65e4010959c8dc0c11",
+        	"description": null,
+        	"items": [
+        		{
+        			"name": "Biscuit",
+        			"quantity": 3,
+        			"unit_price": "3500"
+        		},
+        		{
+        			"name": "Water",
+        			"quantity": 2,
+        			"unit_price": "1000"
+        		}
+        	],
+        	"room_id": "6133c5a68006324323416896",
+        	"title": "Food Expenses",
+        	"plugin_id": "613ba9de41f5856617552f51",
+        	"organization_id": "6133c5a68006324323416896"
+         }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_72a7b3fb3ef04880994e7e1ea102444f
+    authentication: {}
+    metaSortKey: -1628789542120.5312
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b91a3b8cdacb4eab830bd6336ed48399
+    parentId: fld_5684751e98e344efa4867f19687fd4fa
+    modified: 1631737558990
+    created: 1631724436885
+    url: "{{api_base}}/api/v1/expenses/614256519fd1f4f655d44625"
+    name: Expenses | update
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"author_id": "613d3e65e4010959c8dc0c11",
+        	"description": null,
+        	"items": [
+        		{
+        			"name": "Biscuit",
+        			"quantity": 3,
+        			"unit_price": "3500"
+        		},
+        		{
+        			"name": "Water",
+        			"quantity": 2,
+        			"unit_price": "1000"
+        		}
+        	],
+        	"room_id": "6133c5a68006324323416896",
+        	"title": "Travel Expenses",
+        	"plugin_id": "613ba9de41f5856617552f51",
+        	"organization_id": "6133c5a68006324323416896",
+        	"list_status": "pending",
+        	"object_id": "614256519fd1f4f655d44625"
+         }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_72a7b3fb3ef04880994e7e1ea102444f
+    authentication: {}
+    metaSortKey: -1628789542108.0312
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4dca7f767c3045d5881bc420819d6a77
+    parentId: fld_5684751e98e344efa4867f19687fd4fa
+    modified: 1631737611974
+    created: 1631730764401
+    url: "{{api_base}}/api/v1/expenses/search"
+    name: Expenses | search
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"room_id": "6133c5a68006324323416896",
+        	"plugin_id": "613ba9de41f5856617552f51",
+        	"organization_id": "6133c5a68006324323416896",
+        	"filter": {
+        		"status": "pending",
+        		"title": "Travel"
+        	}
+         }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_72a7b3fb3ef04880994e7e1ea102444f
+    authentication: {}
+    metaSortKey: -1628789542101.7812
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_16ca22ccd7734547b9fc45757b7e0885
+    parentId: fld_5684751e98e344efa4867f19687fd4fa
+    modified: 1631737409628
+    created: 1631736082004
+    url: "{{api_base}}/api/v1/expenses/614255a89fd1f4f655d4461e"
+    name: Expenses | delete
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"room_id": "6133c5a68006324323416896",
+        	"plugin_id": "613ba9de41f5856617552f51",
+        	"organization_id": "6133c5a68006324323416896",
+        	"object_id": "614255a89fd1f4f655d4461e",
+        	"filter": {
+        		"status": "pending"
+        	}
+         }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_346e2783e4f4495b81cf253be71799b5
+    authentication: {}
+    metaSortKey: -1628789542095.5312
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_17bfc637f13349a384638df7fe4a171e
+    parentId: fld_bce9bcaca6b9498ca50964a688aaeb5d
+    modified: 1631693917389
+    created: 1631688575253
+    url: "{{ api_base }}/api/v1/rooms"
+    name: Room | Create
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_ab47d72680a540e19d0874ae3317b0cd
+        name: Accept
+        value: application/json
+        description: ""
+    authentication: {}
+    metaSortKey: -1631688575253
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_bce9bcaca6b9498ca50964a688aaeb5d
+    parentId: fld_31a61285246e4765889050c3f4f3432a
+    modified: 1631736980513
+    created: 1631688548667
+    name: Rooms
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1629322947988.625
+    _type: request_group
+  - _id: req_5f34f19f3d0c45eb8d8b65770ff717e8
+    parentId: fld_bce9bcaca6b9498ca50964a688aaeb5d
+    modified: 1631778112349
+    created: 1631778112350
+    url: "{{ api_base }}/api/v1/rooms"
+    name: Room | Index
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_ab47d72680a540e19d0874ae3317b0cd
+        name: Accept
+        value: application/json
+        description: ""
+    authentication: {}
+    metaSortKey: -1630239058749.2656
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ee49c724d7f94ce183821b27d530667c
+    parentId: fld_a6db00d71fd64962b16d764bd6d9a351
+    modified: 1631736944630
+    created: 1631732930561
+    url: https://api.zuri.chat/data/read/613ba9de41f5856617552f51/expenses_list_collection/6133c5a68006324323416896?status=pending
+    name: Zuri| read
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"room_id": "6133c5a68006324323416896",
+        	"plugin_id": "613ba9de41f5856617552f51",
+        	"organization_id": "6133c5a68006324323416896",
+        	"filter": {
+        		"title": "Food Expense"
+        	}
+         }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_72a7b3fb3ef04880994e7e1ea102444f
+    authentication: {}
+    metaSortKey: -1618654833551.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a6db00d71fd64962b16d764bd6d9a351
+    parentId: fld_31a61285246e4765889050c3f4f3432a
+    modified: 1631736930788
+    created: 1631736924158
+    name: Test
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1629322947963.625
+    _type: request_group
+  - _id: req_1a683fc89e6f4cc189d3f9fbcea9d2d2
+    parentId: fld_a6db00d71fd64962b16d764bd6d9a351
+    modified: 1631736968841
+    created: 1631694321530
+    url: https://dm.zuri.chat/api/v1/createroom
+    name: DM | createroom
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"organisation_id": "6133c5a68006324323416896",
+        	"room_name": "Expense Room",
+        	"creator_id": "6141bdbf9fd1f4f655d444ea",
+        	"plugin_id": "613ba9de41f5856617552f51",
+        	"visibility": "public",
+        	"creation_date": ""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_00eb2c1a6af944139a9a673169c71ecb
+    authentication:
+      type: bearer
+      token: skajdjashdjahdjkahdjahdajdhsjdhasjdkhdjkahda
+    metaSortKey: -1618654833545.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c6a396a5c9e34518b7c868ace514f668
+    parentId: fld_a6db00d71fd64962b16d764bd6d9a351
+    modified: 1631736954943
+    created: 1631697128689
+    url: https://api.zuri.chat/users/6141b7329fd1f4f655d444d4
+    name: ZURI USER | get
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        "first_name": "Airon",
+        "last_name": "Dev",
+        "phone_number": "08134649622",
+        "password": "password",
+        "email": "airondev@gmail.com",
+        "email_verified": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_00eb2c1a6af944139a9a673169c71ecb
+    authentication: {}
+    metaSortKey: -1618654833539.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_df05cc3372934966bd3eb0b039f5aabf
+    parentId: fld_a6db00d71fd64962b16d764bd6d9a351
+    modified: 1631736951531
+    created: 1631696587390
+    url: https://api.zuri.chat/users
+    name: ZURI USER | create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        "first_name": "Airon",
+        "last_name": "Dev",
+        "phone_number": "08134649622",
+        "password": "password",
+        "email": "aironde.v@gmail.com",
+        "email_verified": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_00eb2c1a6af944139a9a673169c71ecb
+    authentication: {}
+    metaSortKey: -1618654833526.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_63b9cedf10b24c45a48a4bcec726fab4
+    parentId: fld_a6db00d71fd64962b16d764bd6d9a351
+    modified: 1631736934480
+    created: 1631541007249
+    url: https://api.zuri.chat/data/write
+    name: Zuri| write
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        "plugin_id": "string",
+        "organization_id": "string",
+        "collection_name": "string",
+        "bulk_write": true,
+        "object_id": "string",
+        "filter": { },
+        "payload": { }
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_72a7b3fb3ef04880994e7e1ea102444f
+    authentication: {}
+    metaSortKey: -1618654833501.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_b29420a689162155d694039a9f79e5728f606e25
+    parentId: wrk_87afa490db7542d193a83b2e8c31769b
+    modified: 1631456628550
+    created: 1631456484517
+    name: Base Environment
+    data:
+      api_base: http://zc-expenses.air
+    dataPropertyOrder:
+      "&":
+        - api_base
+    color: null
+    isPrivate: false
+    metaSortKey: 1631456484517
+    _type: environment
+  - _id: jar_b29420a689162155d694039a9f79e5728f606e25
+    parentId: wrk_87afa490db7542d193a83b2e8c31769b
+    modified: 1631716712832
+    created: 1631456484639
+    name: Default Jar
+    cookies:
+      - key: XSRF-TOKEN
+        value: eyJpdiI6IlpjTVltT1VmSVVpUlkwRHZaZGMrdEE9PSIsInZhbHVlIjoiMm1pMU9iUzRwTG9mUVlxRlE1VVFPMW1OTDd0TkZSSXlHcTk4dzNDRVJWc0dwMnpvOWVaUmVHbnRpdXhzWkFOR0Z2M3hPT20yT2xUMVhValNySEhSZC90TDk0WlVYbU9pRGxqZTE4VEJJVy9wL1licFJiUGNSc2hOVDh5U0pRS28iLCJtYWMiOiIyYzRiNWEwMmNlODI0MjkxMzZlY2FjN2JmMmVmMGNiODllZTRmMmY0ZmIyOGQ0ZmFiZTMyNGVmMmI4NmM3MGQzIn0%3D
+        expires: 2021-09-15T16:38:32.000Z
+        maxAge: 7200
+        domain: zc-expenses.air
+        path: /
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        creation: 2021-09-12T18:09:01.102Z
+        lastAccessed: 2021-09-15T14:38:32.747Z
+        id: "34432065250552046"
+      - key: laravel_session
+        value: eyJpdiI6IlRsSDB2cG4zTFJLRE43MXF1dmxLOGc9PSIsInZhbHVlIjoiakw5aWVOYmRtb2JIY3ArK2JMZzZLdmpmQ0s0Q3JkTU10TDdhNEtSYkNaWnhlZHFFRThPOC96aFFOcGZTaUNCcHd6RnRpckxVWlFBekxpaTlzZlVmajdnQkdGQnFpNXZVL0w4UEJCNmVkNE9MdktaaFV6bkhmMEZrSmZLTjhwaEUiLCJtYWMiOiI2YjRiN2Y2MDM4M2ZlNTg4ZTU2YmE4NTFkODZlZWE4MzZiY2YzNTJhYzNjZTc0OGZmNWZhMjliMzNhYmQ3N2M5In0%3D
+        expires: 2021-09-15T16:38:32.000Z
+        maxAge: 7200
+        domain: zc-expenses.air
+        path: /
+        httpOnly: true
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        creation: 2021-09-12T18:09:01.103Z
+        lastAccessed: 2021-09-15T14:38:32.748Z
+        id: "505071681478295"
+    _type: cookie_jar
+  - _id: spc_0915e0a7c6a7493bbf7eb4486e896b56
+    parentId: wrk_87afa490db7542d193a83b2e8c31769b
+    modified: 1631456483604
+    created: 1631456483604
+    fileName: Zuri Chat
+    contents: ""
+    contentType: yaml
+    _type: api_spec
